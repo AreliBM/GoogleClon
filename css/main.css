@@ -1,0 +1,224 @@
+body
+{
+   margin: 0; /*MARGEN*/
+   padding: 0; /*MARGEN INTERNO*/
+   font-size: 13px; /*TAMAÑO DE LA FUENTE*/
+   font-family: Arial, Helvetica, sans-serif; /*TIPOFRAFÍA*/
+}
+/***********************************/
+/* Navegación */
+header
+{
+    width: 100%; /*ANCHO*/
+    height: 55%; /*ALTO*/
+}
+header nav
+{
+    /*background-color: aqua;*/
+    display: flex; /*MOVIMIENTO DE LOS ELEMENTOS*/
+    justify-content:flex-end;
+}
+header nav .nav-right-section
+{
+   /* background-color: yellow;*/
+    list-style: none; /*ELIMINAR VIÑETAS*/
+    width: 250px;
+    display: flex;
+    justify-content: center; /*JUSTIFICA EN HORIZONTAL*/
+    align-items: center;/*JUSTIFICA EN VERTICAL*/
+    height: auto; /*Altura automatica*/
+}
+nav .nav-right-section 
+a
+{
+    color: rgb(21, 21, 21); /*COLOR DE TEXTO*/
+    text-decoration: none; /*LÍNEA DE BAJO DEL TEXTO*/
+    margin-right: 15px; /*SEPARACIÓN ENTRE PALABRAS A LA DERECHA*/
+}
+nav .nav-right-section .Menu
+{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+nav .nav-right-section img
+{
+    margin-left: 20px; /*MARGEN A LA IZQUIERDA*/
+    border-radius: 20px; /*REDONDEAR*/
+    width: 33px; /*ANCHURA*/
+}
+main
+{
+    text-align: center;
+    margin-top:160px;
+}
+main .main-logo
+{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img /*LOGO GOOGLE*/
+{
+    height: 110px;
+}
+main .main-input
+{
+    width: 560px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*CAJITA GRIS REDONDEADA BUSCASDOR*/
+main .main-input-container
+{
+    border: 1px solid #dfe1e5; /*ANCHO EN LÍNEA, ESTILO Y COLOR*/
+    border-radius: 30px; /*BORDES REDONDEADOS*/
+    width: 620px;
+}
+main .main-input input
+{
+    height: 40px;
+    width: 500px; /*QUITAR BORDE NEGRO*/
+    border: none; /*QUITAR BORDE AZUL AL HACER CLICK*/
+    outline: none;
+}
+main .main-input-container:hover
+{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon
+{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+main .main-input .micro-icon
+{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 3%;
+    padding-right: 10px;
+}
+main .main-input .cam-icon
+{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right:6%;
+    padding-left: 1%;
+}
+main .main-buttons
+{
+    width: 550px;
+    margin: 0 auto;
+}
+main .main-buttons div /*ALINEACIÓN DE LOS BOTONES*/
+{
+    display: inline-block;
+}
+main .main-buttons button
+{
+    border: 0;
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+   /* cursor: pointer;*/
+}
+main .main-input-container:hover/*LE DAMOS SOMBRA A LOS BOTONES CUANDO PASEMOS EL CURSOR SOBRE EL*/
+{
+    box-shadow: 0 0 4px #20212447;
+    border-color: #dfe1e500;
+}
+main .main-buttons button:hover
+{
+    color: #202124;
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 .5px rgba(0,0,0,.1);
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 12px;
+    background-color: #ffffff;
+    border-top: 1px solid #f6f6f6;
+}
+footer .seccion-mexico
+{
+    padding-left: 30px;
+    border-bottom: 1px solid #dadce2;
+    font-size: 15px;
+    margin: 0 auto;
+}
+footer .seccion-links
+{
+margin-bottom: 3px;
+}
+footer nav 
+{
+display: flex;
+justify-content: space-between;
+}
+footer nav .nav-inf-section
+{
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   justify-content: left;
+   align-items: center;
+   padding-top: 10px; 
+}
+footer nav .nav-inf-section
+{
+    color: grey;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 13px;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left:0;
+}
+.footer-left {
+    justify-self: left;
+}
+.footer-right {
+    justify-self: right;
+}
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+footer .lista-privacy
+{
+    margin-right: 130px;
+}
+footer a
+{
+    text-decoration: none;
+    margin-left: 28px;
+    color: #707578;
+}
